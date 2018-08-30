@@ -23,7 +23,7 @@ spec:
     requests:
       storage: 1Gi
 ---
-apiVersion: apps/v1
+apiVersion: apps/v1beta
 kind: Deployment
 metadata:
   name: postgres-kong
