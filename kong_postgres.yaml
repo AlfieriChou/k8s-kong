@@ -54,7 +54,7 @@ spec:
   - port: 8444
   type: NodePort
 ---
-apiVersion: apps/v1
+apiVersion: apps/v1beta
 kind: Deployment
 metadata:
   name: kong-deployment
