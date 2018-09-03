@@ -6,7 +6,7 @@ spec:
   type: NodePort
   ports:
   - name: kong-proxy
-    port: 8000
+    port: 80
     targetPort: 8000
     protocol: TCP
   selector:
@@ -21,7 +21,7 @@ spec:
   type: NodePort
   ports:
   - name: kong-proxy-ssl
-    port: 8443
+    port: 443
     targetPort: 8443
     protocol: TCP
   selector:
@@ -93,10 +93,10 @@ spec:
           containerPort: 8001
           protocol: TCP
         - name: proxy
-          containerPort: 8000
+          containerPort: 80
           protocol: TCP
         - name: proxy-ssl
-          containerPort: 8443
+          containerPort: 443
           protocol: TCP
         - name: admin-ssl
           containerPort: 8444
